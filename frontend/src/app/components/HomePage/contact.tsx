@@ -8,7 +8,7 @@ const Contact = () => {
     <>
       <section id="contact" className={`contact ${styles.contact}`}>
         <div className="container" data-aos="fade-up">
-          <div className="section-title">
+          <div  className={`sectiontitle ${styles.sectiontitle}`}>
             <h2>Contact Us</h2>
           </div>
           <div className={`row mt-1 d-flex justify-content-end ${styles.contactRow}`} data-aos="fade-right" data-aos-delay="100">
@@ -17,12 +17,14 @@ const Contact = () => {
                 <div className={styles.address}>
                   <i className="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Royal Crown Plaza, 3rd Floor, 
+Plot # 164 & 165, Business <br />Square, 
+Gulberg Green</p>
                 </div>
                 <div className={styles.email}>
                   <i className="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>Zepto@example.com</p>
                 </div>
                 <div className={styles.phone}>
                   <i className="bi bi-phone"></i>

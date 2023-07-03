@@ -9,33 +9,33 @@ const Header = () => {
       <header id="header" className="fixed-top d-flex align-items-center">
         <div className="container d-flex align-items-center justify-content-between">
           <h1 className="logo">
-            <Link href="/">Zepto</Link>
+            <Link href="/" style={{ textDecoration: 'none' }}>Zepto</Link>
           </h1>
           <nav id="navbar" className="navbar">
             <ul>
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/" style={{ textDecoration: 'none' }}>Home</Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about" style={{ textDecoration: 'none' }}>About</Link>
               </li>
               <li>
-                <Link href="#services">Services</Link>
+                <Link href="#services" style={{ textDecoration: 'none' }}>Services</Link>
               </li>
               <li>
-                <Link href="#portfolio">Portfolio</Link>
+                <Link href="#portfolio" style={{ textDecoration: 'none' }}>Portfolio</Link>
               </li>
               <li>
-                <Link href="#team">Team</Link>
+                <Link href="#team" style={{ textDecoration: 'none' }}>Team</Link>
               </li>
               <li>
-                <Link href="#pricing">Pricing</Link>
+                <Link href="#pricing" style={{ textDecoration: 'none' }}>Pricing</Link>
               </li>
               <li>
-                <Link href="/blog">Blog</Link>
+                <Link href="/blog" style={{ textDecoration: 'none' }}>Blog</Link>
               </li>
               <li className="dropdown">
-                <Link href="#">
+                <Link href="#" style={{ textDecoration: 'none' }}>
                   Drop Down <i className="bi bi-chevron-down"></i>
                 </Link>
                 <ul>
@@ -57,7 +57,7 @@ const Header = () => {
                 </ul>
               </li>
               <li>
-                <Link href="#contact">Contact</Link>
+                <Link href="#contact" style={{ textDecoration: 'none' }}>Contact</Link>
               </li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle"></i>

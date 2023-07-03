@@ -18,13 +18,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-      <html>
-        <body className={inter.className}>
-          <Header />
-          {children}
-          <Footer/>
-        </body>
-      </html>
+      <Header />
+      {children}
+      <Footer />
     </>
   );
 }

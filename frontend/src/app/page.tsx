@@ -1,5 +1,4 @@
-
-
+import React from 'react';
 import Introduction from './components/HomePage/introduction';
 import Service from './components/HomePage/service';
 import About from './components/HomePage/about';

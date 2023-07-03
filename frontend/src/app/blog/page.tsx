@@ -70,10 +70,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 export default async function MyComponent() {
   const data = await blogData();
-  console.log("Blog Dataaaa in typesr=cript", data);
+  console.log("Blog Dataaaa", data);
 
   return (
-    <>
+<div>
       <section id="breadcrumbs" className={styles.breadcrumbs}>
         <div className="container">
           <ol>
@@ -152,6 +152,6 @@ export default async function MyComponent() {
                       </ul>
                     </div>
       </section>
-    </>
+      </div>
   );
 }
