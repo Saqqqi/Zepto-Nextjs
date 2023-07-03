@@ -3,6 +3,7 @@ import Image from 'next/image';
 import 'bootstrap/dist/css/bootstrap.css';
 import ReactMarkdown from 'react-markdown';
 import  styles  from './blog.module.css';
+import { blogData } from '../../services/api';
 
 async function fetchBlog(slug: any) {
   const res = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/blogs?slug=${slug}&populate=*`, { cache: 'no-store' });

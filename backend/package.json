@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "zepto-project",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -10,16 +10,17 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.11.1",
-    "@strapi/plugin-users-permissions": "4.11.1",
-    "@strapi/strapi": "4.11.1",
+    "@strapi/plugin-i18n": "4.10.5",
+    "@strapi/plugin-users-permissions": "4.10.5",
+    "@strapi/strapi": "4.10.5",
     "better-sqlite3": "8.0.1"
+  
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "9d36b1bb-470c-418d-8aec-97047ee7d71e"
+    "uuid": "ad6cda11-2c29-4559-a005-0f79f1cb6fb4"
   },
   "engines": {
     "node": ">=14.19.1 <=18.x.x",

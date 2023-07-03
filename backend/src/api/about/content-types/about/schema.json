@@ -35,13 +35,13 @@
         "Learn more"
       ]
     },
+    "short_description": {
+      "type": "richtext"
+    },
     "list": {
       "type": "richtext"
     },
     "extra_description": {
-      "type": "richtext"
-    },
-    "short_description": {
       "type": "richtext"
     }
   }

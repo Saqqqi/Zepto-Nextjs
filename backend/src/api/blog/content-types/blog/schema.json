@@ -18,11 +18,17 @@
     "short_description": {
       "type": "richtext"
     },
-    "author": {
-      "type": "string"
-    },
     "publish_date": {
       "type": "date"
+    },
+    "url": {
+      "type": "string"
+    },
+    "button": {
+      "type": "enumeration",
+      "enum": [
+        "Read-More"
+      ]
     },
     "image": {
       "type": "media",
@@ -35,21 +41,15 @@
         "audios"
       ]
     },
-    "button": {
-      "type": "enumeration",
-      "enum": [
-        "Read More"
-      ]
-    },
-    "url": {
-      "type": "string"
-    },
     "long_description": {
       "type": "richtext"
     },
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "author": {
+      "type": "string"
     }
   }
 }
