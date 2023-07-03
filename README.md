@@ -13,11 +13,11 @@ To run the Zepto Limited company website locally, follow the steps below:
 
 ### Prerequisites
 
-Before you begin, make sure you have the following software installed on your machine:
+Before you begin, make sure you have the following software installed on your machine.
 
-- Node.js (version X.X.X)
-- npm (version X.X.X)
-- MongoDB (version X.X.X)
+- next (version 13.4.7)
+- bootstrap (version 5.3.0)
+- react-markdown (version 8.0.7)
 
 ### Installation
 
