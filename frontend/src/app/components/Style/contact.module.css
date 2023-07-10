@@ -1,6 +1,7 @@
 .contact {
     background: url("../../../../asserts/contact-bg.png") left center no-repeat;
     position: relative;
+    top: 50px;
   }
   
   .contact:before {
@@ -60,7 +61,7 @@
     background: #fff;
   }
   
-  .contact .php-email-form .form-group {
+  .form-group {
     padding-bottom: 8px;
   }
   
@@ -97,7 +98,10 @@
     text-align: center;
     padding: 15px;
   }
-  
+  .contactRow{
+    position: relative;
+    top: 50px;
+  }
   .loading:before {
     content: "";
     display: inline-block;

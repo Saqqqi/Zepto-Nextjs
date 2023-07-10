@@ -1,7 +1,7 @@
 import ReactMarkdown from 'react-markdown';
 import styles from '../Style/introduction.module.css';
 // import 'animate.css/animate.min.css';
-import { introductionData } from '../../services/api';
+import { introductionData } from '../../Api/api';
 import { Key } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -26,7 +26,7 @@ export default async function MyComponent() {
                 <ReactMarkdown className={`animate__animated animate__fadeInUp ${styles.description}`}>
                   {item.attributes.description}
                 </ReactMarkdown><br/>
-                <a href="#about" className={`btn-get-started animate__animated animate__fadeInUp scrollto ${styles.button}`}>
+                <a href="#about"  style={{ textDecoration: 'none' }} className={`btn-get-started animate__animated animate__fadeInUp scrollto ${styles.button}` }>
                   Read More
                 </a>
               </div>

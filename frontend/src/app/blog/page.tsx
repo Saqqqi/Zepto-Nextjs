@@ -48,7 +48,7 @@
 //                   Voluptate porro consequatur assumenda perferendis dolore.
 //                 </p>
 //                 <div className={`read-more ${styles.readMore}`}>
-//                   <Link href="/blog-single">Read More</Link>
+//                   <Link href="/blog-single">Read More</Link>Api
 //                 </div>
 //               </div>
 //             </article>
@@ -62,7 +62,7 @@
 // export default Blog;
 
 import React from 'react';
-import { blogData } from '../services/api';
+import { blogData } from '../Api/api';
 import Link from 'next/link';
 import styles from '../blog/blog.module.css';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -70,27 +70,26 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 export default async function MyComponent() {
   const data = await blogData();
-  console.log("Blog Dataaaa in typesr=cript", data);
+  console.log("Blog Dataaaa", data);
 
   return (
-    <>
-      <section id="breadcrumbs" className={styles.breadcrumbs}>
-        <div className="container">
-          <ol>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-          </ol>
-          <h2>Blog</h2>
+<div>
+<div className={`breadcrumbs d-flex align-items-center ${styles.breadcrumbs}`} style={{ backgroundImage: "url('../../../../asserts/hero-bg.jpg')" }}>
+        <div className="container position-relative d-flex flex-column align-items-center" data-aos="fade">           
+         <h2>Blog</h2>
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li>Blog</li>
+            </ol>
+          </div>
         </div>
-      </section>
       <section id="blog" className={`blog ${styles.blog}`}>
 
 
       <div className="container" data-aos="fade-up">
     
         <div className="d-flex justify-content-center">
-          <div className="row-lg-6">
+          <div className="row-lg-8">
             <div className="col-lg-8 entries">
               {data && data.data && data.data.length > 0 ? (
                 data.data.map((blog: { id: React.Key | null | undefined; attributes: {
@@ -150,8 +149,120 @@ export default async function MyComponent() {
                         <li className="active"><a href="#">2</a></li>
                         <li><a href="#">3</a></li>
                       </ul>
-                    </div>
+                    </div>meta
       </section>
-    </>
+      </div>
   );
 }
+
+// import React from 'react';
+// import { blogData } from '../services/api';
+// import Link from 'next/link';
+// import styles from '../blog/blog.module.css';
+// import 'bootstrap/dist/css/bootstrap.css';
+
+// interface BlogPost {
+//   id: string;
+//   title: string;
+//   description: string;
+//   imageUrl: string;
+//   date: string;
+//   author: string;
+//   category: string;
+// }
+
+// export default async function MyComponent() {
+//   const { data } = await blogData();
+//   console.log("Blog Data:", data);
+
+//   const BlogSection = () => {
+//     return (
+//       <>
+//         <div className={`breadcrumbs d-flex align-items-center ${styles.breadcrumbs}`} style={{ backgroundImage: "url('../../../../asserts/hero-bg.jpg')" }}>
+//           <div className="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+//             <h2>Blog</h2>
+//             <ol>
+//               <li><a href="index.html">Home</a></li>
+//               <li>Blog</li>
+//             </ol>
+//           </div>
+//         </div>
+//         <section id="blog" className={styles.blog}>
+//           <div className="container" data-aos="fade-up" data-aos-delay="100">
+//             <div className={`row gy-6 ${styles['postslist']}`}>
+//               {data.map((post: BlogPost) => (
+//                 <div key={post.id} className={`col-xl-4 col-md-6 ${styles['postitem']} position-relative h-100`}>
+//                   <div className={`post-img position-relative overflow-hidden ${styles['postimg']}`}>
+//                     <img src={post.imageUrl} className={`imgfluid ${styles['imgfluid']}`} alt="" />
+//                     <span className={styles['postdate']}>{post.date}</span>
+//                   </div>
+//                   <div className={`post-content d-flex flex-column ${styles['postcontent']}`}>
+//                     <h3 className={`post-title ${styles['posttitle']}`}>{post.title}</h3>
+//                     <div className={`meta d-flex align-items-center ${styles['meta']}`}>
+//                       <div className="d-flex align-items-center">
+//                         <i className="bi bi-person"></i> <span className={`ps-2 ${styles['ps-2']}`}>{post.author}</span>
+//                       </div>
+//                       <span className={`px-3 text-black-50 ${styles['px-3']}`}>/</span>
+//                       <div className="d-flex align-items-center">
+//                         <i className="bi bi-folder2"></i> <span className={`ps-2 ${styles['ps-2']}`}>{post.category}</span>
+//                       </div>
+//                     </div>
+//                     <p className={`p ${styles['p']}`}>{post.description}</p>
+//                     <hr />
+//                     <Link href={`/blog/${post.id}`}>
+//                       <a className={`readmore stretched-link ${styles['readmore']}`}>
+//                         <span>Read More</span>
+//                         <i className="bi bi-arrow-right"></i>
+//                       </a>
+//                     </Link>
+//                   </div>
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+//           <div className={`blogPagination ${styles.blogPagination}`}>
+//             <ul className={`justify-content-center `}>
+//               <li><a href="#">1</a></li>
+//               <li className="active"><a href="#">2</a></li>
+//               <li><a href="#">3</a></li>
+//             </ul>
+//           </div>
+//         </section>
+//       </>
+//     );
+//   }
+
+//   ;
+// }
+
+
+// import React from 'react';
+
+// interface BlogData {
+//   // Define the structure of your blog data here
+// }
+
+// const MyComponent: React.FC = () => {
+//   const fetchBlogData = async () => {
+//     try {
+//       const response = await fetch('http://127.0.0.1:1337/api/blogs'); // Replace with the actual API endpoint
+//       const blogData: BlogData[] = await response.json();
+//       console.log("Blog Data:", blogData);
+//       // Process the blog data as needed
+//     } catch (error) {
+//       console.error('Error fetching blog data:', error);
+//     }
+//   };
+
+//   fetchBlogData();
+
+//   return (
+//     <>
+//       {/* Render your component JSX */}
+//     </>
+//   );
+// };
+
+// export default MyComponent;
+
+

@@ -61,7 +61,7 @@ import Link from 'next/link';
 import styles from '../../components/Style/about.module.css';
 // import 'animate.css/animate.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { AboutData } from '../../services/api';
+import { AboutData } from '../../Api/api';
 
 export default async function MyComponent() {
   const data = await fetchData();

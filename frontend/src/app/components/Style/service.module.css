@@ -1,4 +1,4 @@
- .icon-box {
+ .iconbox {
   margin-bottom: 20px;
   padding: 50px 40px;
   border-radius: 6px;
@@ -6,35 +6,36 @@
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
- .icon-box i {
+ .iconbox i {
   float: left;
   color: #f6b024;
   font-size: 40px;
   line-height: 0;
 }
 
-.icon-box h4 {
+.iconbox h4 {
   margin-left: 70px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
- .icon-box h4 a {
+ .iconbox h4 a {
   color: #05579e;
   transition: 0.3s;
 }
  .icon-box h4 a:hover {
   color: #0880e8;
 }
- .icon-box p {
+ .iconbox p {
+  
   margin-left: 70px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
-  .section-title{
+  .sectiontitle{
     text-align: center;
     justify-content: center;
   align-items: center;

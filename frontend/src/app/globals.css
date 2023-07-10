@@ -1,9 +1,11 @@
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+
 #header {
   background: rgba(5, 74, 133, 0.9);
   transition: all 0.5s;
   z-index: 997;
   height: 70px;
-  top: 60px;
+ 
 }
 
 #header.header-scrolled {
@@ -12,7 +14,13 @@
 }
 
 #header .logo {
-  font-size: 30px;
+ width: 200px;
+ height: 50px;
+    /* background-image: url("../../asserts/Zepto-ICons.png");   */
+   background-size: cover;
+   cursor: pointer;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -23,10 +31,13 @@
 
 #header .logo a {
   color: #fff;
+
+  
 }
 
 #header .logo img {
   max-height: 40px;
+  
 }
 
 .header-inner-pages {
@@ -45,13 +56,13 @@
 */
 .navbar {
   padding: 0;
-  text-decoration: none;
+
 }
 
 .navbar ul {
   margin: 0;
   padding: 0;
-  text-decoration: none;
+
   display: flex;
   list-style: none;
   align-items: center;
@@ -515,14 +526,5 @@
 
   100% {
     transform: rotate(360deg);
-  }
-}
-
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    transition-delay: 0 !important;
   }
 }

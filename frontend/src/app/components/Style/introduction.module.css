@@ -78,7 +78,7 @@
     border: 2px solid #f6b024;
   }
   
-  .button {
+  .button:hover {
     background: #f6b024;
     color: #fff;
     text-decoration: none;

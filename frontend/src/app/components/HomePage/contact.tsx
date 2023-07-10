@@ -1,6 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../Style/contact.module.css';
+import { BsGeoAlt, BsEnvelope, BsPhone } from 'react-icons/bs';
+
+
+// Rest of your code...
+
+
+import { BiEnvelope, BiMap, BiPhone } from 'react-icons/bi';
+
+
 // import 'animate.css/animate.min.css';
 
 const Contact = () => {
@@ -8,27 +17,28 @@ const Contact = () => {
     <>
       <section id="contact" className={`contact ${styles.contact}`}>
         <div className="container" data-aos="fade-up">
-          <div className="section-title">
+          <div className={`sectiontitle ${styles.sectiontitle}`}>
             <h2>Contact Us</h2>
           </div>
           <div className={`row mt-1 d-flex justify-content-end ${styles.contactRow}`} data-aos="fade-right" data-aos-delay="100">
             <div className="col-lg-5">
               <div className={styles.info}>
                 <div className={styles.address}>
-                  <i className="bi bi-geo-alt"></i>
+               <i>   <BsGeoAlt /></i>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Royal Crown Plaza, 3rd Floor, Plot # 164 & 165, Business <br />Square, Gulberg Green</p>
                 </div>
                 <div className={styles.email}>
-                  <i className="bi bi-envelope"></i>
+             <i>     <BiEnvelope /></i>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>Zepto@example.com</p>
                 </div>
                 <div className={styles.phone}>
-                  <i className="bi bi-phone"></i>
+                <i>  <BiPhone /></i>
                   <h4>Call:</h4>
                   <p>+1 5589 55488 55s</p>
                 </div>
+
               </div>
             </div>
             <div className={`col-lg-6 mt-5 mt-lg-0 ${styles.contactForm}`} data-aos="fade-left" data-aos-delay="100">
@@ -45,13 +55,13 @@ const Contact = () => {
                   <input type="text" className={`form-control ${styles.formControl}`} name="subject" id="subject" placeholder="Subject" required />
                 </div>
                 <div className="form-group mt-3">
-                <textarea
-  className={`form-control ${styles.formControl}`}
-  name="message"
-  rows={5}
-  placeholder="Message"
-  required
-></textarea>
+                  <textarea
+                    className={`form-control ${styles.formControl}`}
+                    name="message"
+                    rows={5}
+                    placeholder="Message"
+                    required
+                  ></textarea>
 
                 </div>
                 <div className="my-3">

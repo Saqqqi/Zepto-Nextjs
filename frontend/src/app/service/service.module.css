@@ -1,0 +1,130 @@
+.breadcrumbs {
+  padding: 140px 0 60px 0;
+  min-height: 40vh;
+  position: relative;
+  background-size: cover;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs:before {
+  content: "";
+  background-size: cover;
+  background-image:url('../../../asserts/services-1.jpg') ;
+  position: absolute;
+  inset: 0;
+  filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumbs h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.breadcrumbs ol a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.breadcrumbs ol a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: "/";
+}
+.serviceitem {
+    padding: 50px;
+    background: #fff;
+    height: 100%;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  }
+  .FontAwesomeIcon{
+    width: 100px;
+    height: 100px;
+  }
+.icon {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+ .icon i {
+    color:  #f6b024;
+    font-size: 40px;
+    transition: ease-in-out 0.3s;
+    z-index: 2;
+    position: relative;
+    line-height: 1.8;
+  }
+  
+.icon:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #f0f1f2;
+    border-radius: 50px;
+    z-index: 1;
+    top: 10px;
+    right: -15px;
+    transition: 0.3s;
+  }
+  
+  .h3 {
+    color: var(--color-default);
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding-bottom: 8px;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 4px solid #ebebed;
+    transition: 0.3s;
+  }
+  
+  .p {
+    line-height: 24px;
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  
+  .readmore {
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 20px;
+    color:  #f6b024;
+  }
+  
+  .serviceitem:hover .icon:before {
+    background: #f6b024;
+  }
+  
+  .serviceitem:hover .h3 {
+    border-color:  #f6b024;;
+  }
+
+  
